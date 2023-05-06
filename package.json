@@ -1,0 +1,26 @@
+{
+  "name": "layoutcss",
+  "version": "0.0.1",
+  "description": "Small CSS library that includes the most useful Flexbox/Grid classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mich1991/LayoutCSS.git"
+  },
+  "keywords": [
+    "SCSS",
+    "CSS",
+    "Flexbox",
+    "Grid",
+    "layouts"
+  ],
+  "author": "Michal Wozniak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mich1991/LayoutCSS/issues"
+  },
+  "homepage": "https://github.com/mich1991/LayoutCSS#readme"
+}
