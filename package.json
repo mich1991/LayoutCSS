@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./src/layoutCSS.scss:src/css/layoutCSS.css"
+    "sass": "sass --watch ./src/layoutCSS.scss:src/css/layoutCSS.css",
+    "sass-min": "sass --watch ./src/layoutCSS.scss:src/css/layoutCSS.min.css --style compressed",
+    "build": "sass ./src/layoutCSS.scss:src/css/layoutCSS.min.css --style compressed"
   },
   "repository": {
     "type": "git",
