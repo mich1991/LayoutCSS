@@ -4,7 +4,8 @@
   "description": "Small CSS library that includes the most useful Flexbox/Grid classes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/layoutCSS.scss:src/css/layoutCSS.css"
   },
   "repository": {
     "type": "git",
