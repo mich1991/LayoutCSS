@@ -1,14 +1,16 @@
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.row{
+.row {
   flex-direction: row;
 }
-.col{
+
+.col {
   flex-direction: column;
 }
+
 .wrap {
   flex-wrap: wrap;
 }
@@ -32,7 +34,7 @@
   }
 }
 
-$justify: (
+$content: (
         start: start,
         end: end,
         center: center,
@@ -42,13 +44,42 @@ $justify: (
         stretch: stretch
 );
 
-@each $i, $iVal in $justify {
-  .justify-#{$i} {
+@each $i, $iVal in $content {
+  .c-place-#{$i} {
     place-content: $iVal;
   }
-  @each $j, $jVal in $justify {
-    .justify-#{$i}-#{$j} {
+  @each $j, $jVal in $content {
+    .c-place-#{$i}-#{$j} {
       place-content: $iVal $jVal;
+    }
+
+  }
+}
+
+$items: (
+        start: start,
+        end: end,
+        center: center,
+        stretch: stretch
+);
+
+@each $i, $iVal in $items {
+  .i-place-#{$i} {
+    place-items: $iVal;
+  }
+  .s-place-#{$i} {
+    place-self: $iVal;
+  }
+
+  @each $j, $jVal in $items {
+    .i-place-#{$i}-#{$j} {
+      place-items: $iVal $jVal;
+    }
+    .s-place-#{$i}-#{$j} {
+      place-self: $iVal $jVal;
     }
   }
 }
+
+
+
