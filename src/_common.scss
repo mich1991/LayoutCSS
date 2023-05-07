@@ -1,3 +1,35 @@
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+
+$items: (
+        start: start,
+        end: end,
+        center: center,
+        stretch: stretch
+);
+
+@each $i, $iVal in $items {
+  .i-place-#{$i} {
+    place-items: $iVal;
+  }
+  .s-place-#{$i} {
+    place-self: $iVal;
+  }
+
+  @each $j, $jVal in $items {
+    .i-place-#{$i}-#{$j} {
+      place-items: $iVal $jVal;
+    }
+    .s-place-#{$i}-#{$j} {
+      place-self: $iVal $jVal;
+    }
+  }
+}
+
 @for $i from 0 through 20 {
   .gap-#{$i} {
     gap: #{$i+ 'px'};

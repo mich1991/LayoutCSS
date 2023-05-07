@@ -56,30 +56,3 @@ $content: (
   }
 }
 
-$items: (
-        start: start,
-        end: end,
-        center: center,
-        stretch: stretch
-);
-
-@each $i, $iVal in $items {
-  .i-place-#{$i} {
-    place-items: $iVal;
-  }
-  .s-place-#{$i} {
-    place-self: $iVal;
-  }
-
-  @each $j, $jVal in $items {
-    .i-place-#{$i}-#{$j} {
-      place-items: $iVal $jVal;
-    }
-    .s-place-#{$i}-#{$j} {
-      place-self: $iVal $jVal;
-    }
-  }
-}
-
-
-
