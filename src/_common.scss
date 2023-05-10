@@ -5,6 +5,19 @@
   height: 100%;
 }
 
+$directions: top, right, left, bottom;
+
+@each $direction in $directions {
+  .sticky-#{$direction} {
+    position: sticky;
+    #{$direction}: 0;
+  }
+}
+
+.sticky{
+  position: sticky;
+}
+
 $items: (
         start: start,
         end: end,

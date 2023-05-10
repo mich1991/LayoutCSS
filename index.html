@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="src/css/layoutCSS.min.css">
+<!--    <link rel="stylesheet" href="src/css/layoutCSS.min.css">-->
     <link rel="stylesheet" href="src/css/layoutCSS.css">
 </head>
 <body>
-<div class="d-flex justify-around gap-20">
-    <div class="square red f-order-2 flex-20"></div>
-    <div class="square yellow f-order-3 flex-30"></div>
-    <div class="square blue"></div>
-    <div class="square green"></div>
+
+<div class="container d-grid grid-hsmf i-place-stretch-start c-place-center-around gap-20">
+    <div class="square red g-header w-100 h-100 sticky-top"></div>
+    <div class="square yellow g-sidebar"></div>
+    <div class="square blue g-content s-place-stretch"></div>
+    <div class="square green g-footer s-place-center-stretch sticky-bottom"></div>
 </div>
+
+
+<!--<div class="container d-grid grid-cols-4 grid-rows-3 gap-20">-->
+<!--    <div class="square red s-place-center"></div>-->
+<!--    <div class="square yellow s-place-end-start"></div>-->
+<!--    <div class="square blue s-place-start-end"></div>-->
+<!--    <div class="square green s-place-end"></div>-->
+<!--</div>-->
+
+<!--<div class="container d-flex c-place-around gap-20">-->
+<!--    <div class="square red f-order-2 flex-20"></div>-->
+<!--    <div class="square yellow f-order-3 flex-30 s-place-end-end"></div>-->
+<!--    <div class="square blue"></div>-->
+<!--    <div class="square green s-place-center"></div>-->
+<!--</div>-->
+
+
 
 </body>
 </html>

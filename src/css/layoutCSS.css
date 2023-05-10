@@ -6,6 +6,30 @@
   height: 100%;
 }
 
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-right {
+  position: sticky;
+  right: 0;
+}
+
+.sticky-left {
+  position: sticky;
+  left: 0;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.sticky {
+  position: sticky;
+}
+
 .i-place-start {
   place-items: start;
 }
@@ -778,10 +802,12 @@
 
 .blue {
   background: blue;
+  height: 200vh;
 }
 
 .yellow {
   background: yellow;
+  height: 200px;
 }
 
 .green {
